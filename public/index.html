@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فندق النخيل الفاخر</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">فندق النخيل</a>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                <li><a href="#rooms"><i class="fas fa-bed"></i> الغرف</a></li>
+                <li><a href="#services"><i class="fas fa-concierge-bell"></i> الخدمات</a></li>
+                <li><a href="#gallery"><i class="fas fa-images"></i> معرض الصور</a></li>
+                <li><a href="#contact"><i class="fas fa-phone"></i> اتصل بنا</a></li>
+                <li><a href="booking.html" class="btn-book">حجز الآن</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- قسم الهيرو -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>استمتع بإقامة فاخرة لا تنسى</h1>
+            <p>فندق 5 نجوم يوفر أرقى الخدمات وأفضل الغرف في المدينة</p>
+            <a href="booking.html" class="btn-hero">احجز غرفتك الآن</a>
+        </div>
+    </section>
+
+    <!-- قسم الغرف -->
+    <section id="rooms" class="rooms-section">
+        <div class="container">
+            <h2 class="section-title">غرفنا الفاخرة</h2>
+            <div class="rooms-grid">
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3" alt="غرفة عادية">
+                    <div class="room-info">
+                        <h3>غرفة عادية</h3>
+                        <p>غرفة مريحة مع جميع الأساسيات</p>
+                        <ul>
+                            <li><i class="fas fa-wifi"></i> وايفاي مجاني</li>
+                            <li><i class="fas fa-tv"></i> تلفزيون بشاشة مسطحة</li>
+                            <li><i class="fas fa-coffee"></i> خدمة الغرف</li>
+                        </ul>
+                        <div class="room-price">
+                            <span class="price">$80 / ليلة</span>
+                            <button class="btn-book-room" data-room="standard">احجز الآن</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3" alt="غرفة ديلوكس">
+                    <div class="room-info">
+                        <h3>غرفة ديلوكس</h3>
+                        <p>غرفة فاخرة مع إطلالة رائعة</p>
+                        <ul>
+                            <li><i class="fas fa-wifi"></i> وايفاي مجاني</li>
+                            <li><i class="fas fa-tv"></i> تلفزيون بشاشة مسطحة</li>
+                            <li><i class="fas fa-spa"></i> خدمة سبا</li>
+                            <li><i class="fas fa-utensils"></i> وجبة إفطار مجانية</li>
+                        </ul>
+                        <div class="room-price">
+                            <span class="price">$120 / ليلة</span>
+                            <button class="btn-book-room" data-room="deluxe">احجز الآن</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3" alt="سويت رئاسي">
+                    <div class="room-info">
+                        <h3>سويت رئاسي</h3>
+                        <p>جناح فاخر مع جميع وسائل الراحة</p>
+                        <ul>
+                            <li><i class="fas fa-wifi"></i> وايفاي مجاني</li>
+                            <li><i class="fas fa-tv"></i> تلفزيون بشاشة مسطحة</li>
+                            <li><i class="fas fa-spa"></i> خدمة سبا</li>
+                            <li><i class="fas fa-swimming-pool"></i> مسبح خاص</li>
+                            <li><i class="fas fa-car"></i> موقف سيارات خاص</li>
+                        </ul>
+                        <div class="room-price">
+                            <span class="price">$200 / ليلة</span>
+                            <button class="btn-book-room" data-room="suite">احجز الآن</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الخدمات -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">خدماتنا</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>مطاعم فاخرة</h3>
+                    <p>نقدم أشهى المأكولات المحلية والعالمية</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-swimming-pool"></i>
+                    <h3>مسابح</h3>
+                    <p>مسابح داخلية وخارجية للكبار والصغار</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-spa"></i>
+                    <h3>سبا وعلاجات</h3>
+                    <p>مركز سبا متكامل مع أحدث العلاجات</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>نادي رياضي</h3>
+                    <p>صالة رياضية مجهزة بأحدث الأجهزة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم اتصل بنا -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">اتصل بنا</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>معلومات الاتصال</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> شارع النخيل، الرياض، السعودية</p>
+                    <p><i class="fas fa-phone"></i> +966 11 123 4567</p>
+                    <p><i class="fas fa-envelope"></i> info@alnakhilhotel.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <input type="text" placeholder="الاسم الكامل" required>
+                    <input type="email" placeholder="البريد الإلكتروني" required>
+                    <textarea placeholder="رسالتك" rows="5" required></textarea>
+                    <button type="submit" class="btn-submit">إرسال الرسالة</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="container">
+            <p>© 2024 فندق النخيل الفاخر. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- نموذج الحجز -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>حجز غرفة</h3>
+            <form id="quickBookingForm">
+                <input type="hidden" id="roomType">
+                <input type="text" id="guestName" placeholder="الاسم الكامل" required>
+                <input type="email" id="guestEmail" placeholder="البريد الإلكتروني" required>
+                <input type="date" id="checkinDate" required>
+                <input type="date" id="checkoutDate" required>
+                <button type="submit" class="btn-submit">تأكيد الحجز</button>
+            </form>
+        </div>
+    </div>
+
+    
+</body>
+</html>

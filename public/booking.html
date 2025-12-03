@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حجز غرفة - فندق النخيل</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">فندق النخيل</a>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                <li><a href="index.html#rooms"><i class="fas fa-bed"></i> الغرف</a></li>
+                <li><a href="index.html#services"><i class="fas fa-concierge-bell"></i> الخدمات</a></li>
+                <li><a href="index.html#contact"><i class="fas fa-phone"></i> اتصل بنا</a></li>
+                <li><a href="booking.html" class="btn-book">حجز الآن</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="booking-section">
+        <div class="container">
+            <h2 class="section-title">حجز غرفة</h2>
+            
+            <div class="booking-container">
+                <div class="booking-steps">
+                    <div class="step active">1. اختيار الغرفة</div>
+                    <div class="step">2. معلومات الحجز</div>
+                    <div class="step">3. التأكيد</div>
+                </div>
+
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-section">
+                        <h3>معلومات الغرفة</h3>
+                        <div class="room-selection">
+                            <div class="room-option">
+                                <input type="radio" id="standard" name="roomType" value="standard" checked>
+                                <label for="standard">
+                                    <h4>غرفة عادية</h4>
+                                    <p>$80 / ليلة</p>
+                                    <ul>
+                                        <li>سرير مزدوج</li>
+                                        <li>وايفاي مجاني</li>
+                                        <li>تلفزيون</li>
+                                    </ul>
+                                </label>
+                            </div>
+                            
+                            <div class="room-option">
+                                <input type="radio" id="deluxe" name="roomType" value="deluxe">
+                                <label for="deluxe">
+                                    <h4>غرفة ديلوكس</h4>
+                                    <p>$120 / ليلة</p>
+                                    <ul>
+                                        <li>سرير كينج</li>
+                                        <li>وايفاي مجاني</li>
+                                        <li>تلفزيون بشاشة مسطحة</li>
+                                        <li>إفطار مجاني</li>
+                                    </ul>
+                                </label>
+                            </div>
+                            
+                            <div class="room-option">
+                                <input type="radio" id="suite" name="roomType" value="suite">
+                                <label for="suite">
+                                    <h4>سويت رئاسي</h4>
+                                    <p>$200 / ليلة</p>
+                                    <ul>
+                                        <li>غرفة نوم واسعة</li>
+                                        <li>صالة جلوس</li>
+                                        <li>وايفاي مجاني</li>
+                                        <li>مسبح خاص</li>
+                                        <li>وجبات مجانية</li>
+                                    </ul>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>تواريخ الإقامة</h3>
+                        <div class="date-selection">
+                            <div class="date-input">
+                                <label for="checkin">تاريخ الوصول</label>
+                                <input type="date" id="checkin" name="checkin" required>
+                            </div>
+                            <div class="date-input">
+                                <label for="checkout">تاريخ المغادرة</label>
+                                <input type="date" id="checkout" name="checkout" required>
+                            </div>
+                            <div class="date-input">
+                                <label for="guests">عدد الضيوف</label>
+                                <select id="guests" name="guests" required>
+                                    <option value="1">1 ضيف</option>
+                                    <option value="2" selected>2 ضيف</option>
+                                    <option value="3">3 ضيف</option>
+                                    <option value="4">4 ضيف</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>معلومات الشخصية</h3>
+                        <div class="personal-info">
+                            <input type="text" id="fullName" placeholder="الاسم الكامل" required>
+                            <input type="email" id="email" placeholder="البريد الإلكتروني" required>
+                            <input type="tel" id="phone" placeholder="رقم الهاتف" required>
+                            <textarea id="specialRequests" placeholder="طلبات خاصة (اختياري)" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>ملخص الحجز</h3>
+                        <div class="booking-summary">
+                            <div class="summary-item">
+                                <span>نوع الغرفة:</span>
+                                <span id="summaryRoom">غرفة عادية</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>المدة:</span>
+                                <span id="summaryNights">1 ليلة</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>السعر الإجمالي:</span>
+                                <span id="summaryPrice">$80</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-submit">تأكيد الحجز</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 فندق النخيل الفاخر. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- سكربت الجافاسكربت لإرسال البيانات -->
+    <script>
+    document.getElementById('bookingForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        const data = {
+            roomType: document.querySelector('input[name="roomType"]:checked').value,
+            guestName: document.getElementById('fullName').value,
+            guestEmail: document.getElementById('email').value,
+            checkinDate: document.getElementById('checkin').value,
+            checkoutDate: document.getElementById('checkout').value,
+            guests: document.getElementById('guests').value,
+            specialRequests: document.getElementById('specialRequests').value
+        };
+
+        try {
+            const response = await fetch('http://localhost:3000/book', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            });
+
+            const result = await response.json();
+            alert(result.message);
+            this.reset();
+        } catch (err) {
+            alert("حدث خطأ أثناء إرسال البيانات");
+            console.error(err);
+        }
+    });
+    </script>
+
+</body>
+</html>
